@@ -53,8 +53,8 @@
     h1 {
         color: rgb(0, 0, 0);
         position: absolute;
-        left: 20px;
-        top: 0px;
+        left: 0px;
+        top: -20px;
         font-size: 25px;
         font-family: monospace; 
     }
@@ -97,13 +97,19 @@
         position: fixed;
         width: 50px;
         top: 30px;
-        right: 50px;
+        right: 60px;
     }
     #insta{
-        top: 10px;
+        width: 50px;
+        top: 30px;
+        right: 90px;
+        position: fixed;
     }
-    #email{
-        top: 10px;
+    #mail{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 50px;
     }
     #icons ul li a{
         color:rgb(0, 0, 0);
@@ -115,6 +121,7 @@
           top: 30px;
           right: 0px;
           color: rgb(0, 0, 0);
+          position: fixed;
     }
     .dropdown ul {
         position: absolute;
