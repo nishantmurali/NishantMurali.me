@@ -1,1 +1,61 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> nishantmurali.com </title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
+    <link rel="stylesheet" href="homestyle.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="header"> <h1> Home </h1> </div>
+        <div class="body1"></div>
+        <div class="footer"> <span>&#169;</span>2020 by Nishant Murali</div>
+    </div>
+
+    <div id = icons>
+        <ul>
+          <li id = spot> <a href="https://open.spotify.com/user/nishantmurali8?si=fsL4fEmOTYGa9lfsazRxmA"> <i class="fa fa-spotify" aria-hidden="true"></i> </a> </li>
+          <li id = insta> <a href="https://www.instagram.com/nishant_murali/"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+          <li id = mail> <i class="fa fa-envelope-o" aria-hidden="true"></i> </li> 
+        </ul>
+    </div>
+
+    <div class="dropdown">
+          <div class="dropbutton"><i class="fa fa-bars" aria-hidden="true"></i></div>
+           <ul>
+                <li> <a href="achievements.html"> Achievements </a> </li>
+                <li> <a href="education.html"> Education </a> </li>
+                <li> <a href="volunteering.html"> Volunteering </a> </li>
+                <li> <a href="about.html"> About Me </a> </li>
+           </ul>
+         </i>
+    </div>
+
+    <div class="home">
+        <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> </a>
+    </div>
+
+    <div class="greeting">
+        <h3> <strong id="name"> NISHANT MURALI </strong> </h3>
+    </div>
+
+      <div class = img>
+        <img src="img/me.PNG" id="image1">
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" > </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.dropbutton').click(function(){
+          $('.dropdown ul li').toggle('active')
+          $('dropbutton').toggleClass('active')
+        })
+      })
+    </script>
+    
+  </body>
+</html>
