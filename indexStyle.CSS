@@ -3,10 +3,9 @@
     
     body {
         margin: 0; 
-        background-color: rgb(161, 161, 161); 
+        background-color: rgb(253, 253, 253); 
         overflow-x: hidden;
         background-size: cover;
-
      }
     .container {
         width: 100vw;
@@ -15,7 +14,7 @@
 
         display: grid;
         grid-template-columns:1fr 2fr 1fr;
-        grid-template-rows: 50px 500px 500px 500px 50px;
+        grid-template-rows: 50px 1000px 500px 500px 50px;
         gap: 10px;
         grid-row-gap: 20px;
     }
@@ -35,8 +34,29 @@
         border: 30px solid rgb(255, 255, 255);
         border-right: 1500px solid white;
         position: fixed;
-        z-index: "4";
+        z-index: 4;
         
+    }
+    .body1{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+        border: 50px solid white;
+        border-top: 100px solid white;
+        border-bottom: 0px solid grey;
+        background-color:rgb(134, 134, 134);
+    }
+    .body2{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+        border: 50px solid rgb(255, 255, 255);
+        border-top: 0px solid grey;
+        background-color:rgb(255, 255, 255);
     }
     .footer {
         grid-column-start: 1;
@@ -49,6 +69,14 @@
         font-size: 12px;
         font-family: monospace;
         text-align: right;
+    }
+    #about{
+        font-size: 125px; 
+        color: solid grey;
+        float: left;
+        font-family: monospace; 
+        position:absolute;
+        z-index: 2;
     }
     h1 {
         color: rgb(0, 0, 0);
@@ -98,18 +126,21 @@
         width: 50px;
         top: 30px;
         right: 60px;
+        z-index: 5;
     }
     #insta{
         width: 50px;
         top: 30px;
         right: 90px;
         position: fixed;
+        z-index: 5;
     }
     #mail{
         position: fixed;
         top: 30px;
         right: 30px;
         width: 50px;
+        z-index: 5;
     }
     #icons ul li a{
         color:rgb(0, 0, 0);
@@ -122,6 +153,7 @@
           right: 0px;
           color: rgb(0, 0, 0);
           position: fixed;
+          z-index: 5;
     }
     .dropdown ul {
         position: absolute;
@@ -166,7 +198,7 @@
     #image1 {
         width: 500px;
         position: absolute;
-        border: 100px solid rgb(34, 33, 33);
+        border: 50px solid rgb(34, 33, 33);
         top: 80px;
         right: 50px;
         z-index: 1;
