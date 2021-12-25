@@ -73,7 +73,7 @@
     #about{
         font-size: 125px; 
         color: solid grey;
-        float: left;
+        right: 90px;
         font-family: monospace; 
         position:absolute;
         z-index: 2;
