@@ -161,10 +161,10 @@
         float: right; 
         color: rgb(0, 0, 0);
     }
-    #spot{
+    #linkedin{
         position: fixed;
         top: 25px;
-        right: 100px;
+        right: 105px;
         z-index: 5;
     }
     #insta{
