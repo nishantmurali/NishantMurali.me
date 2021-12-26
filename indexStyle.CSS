@@ -3,7 +3,7 @@
     
     body {
         margin: 0; 
-        background-color: rgb(253, 253, 253); 
+        background-color: rgb(255, 255, 255); 
         overflow-x: hidden;
         background-size: cover;
      }
@@ -14,7 +14,7 @@
 
         display: grid;
         grid-template-columns:1fr 2fr 1fr;
-        grid-template-rows: 50px 950px 500px 500px 50px;
+        grid-template-rows: 50px 950px 850px 400px 50px;
     }
     .header {
         grid-column-start: 1;
@@ -30,10 +30,9 @@
         border-right: 1500px solid white;
         position: fixed;
         z-index: 4;
-        
     }
     .body1{
-        grid-row-start: 1;
+        grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 4;
@@ -41,17 +40,28 @@
         border: 50px solid white;
         border-top: 100px solid white;
         border-bottom: 0px solid grey;
-        background-color:rgb(100, 100, 100);
+        background-color:rgb(75, 75, 75);
     }
     .body2{
         grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+        border: 50px solid rgb(255, 255, 255);
+        border-top: 0px solid grey;
+        border-bottom: 0px;
+        background-color:rgb(201, 201, 201);
+    }
+    .body3{
+        grid-row-start: 4;
         grid-row-end: 5;
         grid-column-start: 1;
         grid-column-end: 4;
         
         border: 50px solid rgb(255, 255, 255);
         border-top: 0px solid grey;
-        background-color:rgb(201, 201, 201);
+        background-color:rgb(75, 75, 75);
     }
     .footer {
         grid-column-start: 1;
@@ -63,22 +73,30 @@
         color: rgb(0, 0, 0); 
         font-size: 12px;
         font-family: monospace;
-        text-align: right;
+        text-align: center;
     }
     #about{
-        font-size: 125px; 
+        font-size: 100px; 
         color: rgb(100, 100, 100);
-        right: 90px;
+        right: 130px;
         font-family: monospace; 
         position:absolute;
+        z-index: 2;
+    }
+    #contact{
+        font-size: 70px; 
+        color: rgb(255, 255, 255);
+        font-family: monospace; 
+        position:absolute;
+        right: 425px;
         z-index: 2;
     }
     h1 {
         color: rgb(0, 0, 0);
         position: absolute;
-        left: 0px;
-        top: -20px;
-        font-size: 25px;
+        left: -10px;
+        top: -35px;
+        font-size: 30px;
         font-family: monospace; 
     }
     h3 {
