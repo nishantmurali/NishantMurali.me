@@ -21,11 +21,6 @@
         grid-column-end: 3;
                 
         background-color: rgb(255, 255, 255);
-        font-weight: bold;
-        color: white; 
-        font-size: 20px;
-        font-family: Monospace;
-        text-align: center;
         border: 30px solid rgb(255, 255, 255);
         border-right: 1500px solid white;
         position: fixed;
