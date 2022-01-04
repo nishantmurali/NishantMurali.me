@@ -21,6 +21,9 @@
       <div class="frontText">
         <h2> Edmond North High</h2>
       </div>
+      <div class="backText">
+        <h2> Edmond </h2>
+      </div>
     </div>
 
       <div class="box">
@@ -30,6 +33,9 @@
         <div class="frontText">
           <h2> Coppell High</h2>
         </div>
+        <div class="backText">
+          <h2> Edmond </h2>
+        </div>
       </div>
 
       <div class="box">
@@ -38,6 +44,9 @@
         </div>
         <div class="frontText">
           <h2> Texas A&M University</h2>
+        </div>
+        <div class="backText">
+          <h2> Edmond </h2>
         </div>
       </div>
 
@@ -54,7 +63,7 @@
     <div class="dropdown">
           <div class="dropbutton"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></div>
            <ul>
-                <li> <a href="experience.html"> Achievements </a> </li>
+                <li> <a href="experience.html"> Experience </a> </li>
                 <li> <a href="education.html"> Education </a> </li>
                 <li> <a href="volunteering.html"> Volunteering </a> </li>
            </ul>
@@ -69,11 +78,39 @@
           $('dropbutton').toggleClass('active')
         })
       })
-      $(document).ready(function(){
-        $('#pic1').click(function(){
-          frontText.innerHTML = "HI";
-        })
-      })
+
+      $('#pic1').click(function() {
+    $('#pic1').css({
+        'visibility': 'hidden',
+        'color': 'white',
+        'font-size': '44px'
+      });
+    $('.box .backText h2').css({
+        "visibility": 'visible',
+      });
+    });
+
+    $('#pic2').click(function() {
+    $('#pic2').css({
+        'visibility': 'hidden',
+        'color': 'white',
+        'font-size': '44px'
+      });
+    $('.box .backText h2').css({
+        "visibility": 'visible',
+      });
+    });
+
+    $('#pic3').click(function() {
+    $('#pic3').css({
+        'visibility': 'hidden',
+        'color': 'white',
+        'font-size': '44px'
+      });
+    $('.box .backText h2').css({
+        "visibility": 'visible',
+      });
+    });
     </script>
   </body>
 </html>

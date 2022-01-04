@@ -91,6 +91,13 @@
         font-weight: 500;
         line-height:20px;
     }
+    .box .backText h2{
+        font-size: 30px;
+        color:rgb(255, 255, 255);
+        font-weight: 500;
+        line-height:20px;
+        visibility: hidden;
+    }
     .header {
         top: 0px;
         background-color: rgb(255, 255, 255);
